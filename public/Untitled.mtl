@@ -1,0 +1,17 @@
+newmtl polySurface1_N3D_blinn6SG_stack
+illum 7
+Kd 0.913726 0.913726 0.913726
+adobe_interior_color 1 1 1
+Ni 1
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm Untitled/tmp_eu_thumb_a02f_fd88.png
+adobe_map_translucence Untitled/tmp_eu_thumb_9361_d8a2.png
+map_Pr Untitled/tmp_eu_thumb_59e0_0aa2.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd Untitled/tmp_eu_thumb_60e1_571d.png

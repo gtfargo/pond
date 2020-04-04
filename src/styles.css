@@ -27,10 +27,14 @@ body {
   overflow: hidden;
   overscroll-behavior-y: none;
   font-family: 'Amiri', serif;
-  color: white;
+  color: #333;
   background: black;
-  background: radial-gradient(circle at bottom center, rgba(60, 60, 60, 1) 0%, rgba(0, 0, 0, 1) 48%);
-  cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto;
+  background: radial-gradient(
+    circle at bottom center,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(200, 200, 200, 1) 100%
+  );
+  /* cursor: url('https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png') 39 39, auto; */
 }
 
 .loader {
@@ -39,37 +43,56 @@ body {
 }
 
 .header {
-  pointer-events: none;
+  /* pointer-events: none; */
   position: absolute;
-  top: 6em;
-  left: 0;
-  color: white;
+  top: 2rem;
+  color: #333;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 900;
-  font-size: 0.8em;
+  font-size: 2em;
   width: 100%;
   text-align: center;
+  z-index: 1005;
+}
+
+.header:hover {
+  text-decoration: underline;
 }
 
 .header > span {
-  padding: 0 3.25em;
-  letter-spacing: 0.4em;
+  /* padding: 0 3.25em; */
+  letter-spacing: 0.1em;
   position: relative;
 }
 
 .header > span.active::after {
-  content: "";
+  /* content: '';
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
   width: 20px;
   height: 2px;
-  background: white;
+  background: white; */
+}
+
+a {
+  text-decoration: none !important;
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+a.h2 {
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 2em !important;
+  text-decoration: none !important;
+  color: #333;
+  z-index: 1000;
 }
 
 .middle {
-  pointer-events: none;
+  /* pointer-events: none; */
   position: absolute;
   bottom: 2.5em;
   left: 50%;
@@ -78,6 +101,7 @@ body {
   letter-spacing: 0.5em;
   text-align: center;
   width: 100%;
+  z-index: 1000;
 }
 
 .middle > h1 {
@@ -86,13 +110,13 @@ body {
 }
 
 .middle > h1::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 10px;
   left: calc(50% - 25px);
   width: 50px;
   height: 2px;
-  background: white;
+  background: #333;
 }
 
 .middle > h2 {
@@ -100,5 +124,26 @@ body {
   line-height: 0px;
   font-weight: 100;
   letter-spacing: 0.25em;
-  font-style: italic;
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  max-width: 50vw;
+  min-width: 400px;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}
+
+canvas {
+  z-index: 1;
+  position: relative;
+  pointer-events: none;
+  top: -100px;
 }

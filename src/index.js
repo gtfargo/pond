@@ -1,7 +1,8 @@
 import { render } from 'react-dom'
-import React, { Suspense, lazy, useState } from 'react'
+import React, { Suspense, lazy } from 'react'
 import { Logo } from './Logo'
 import { Clock } from './Clock'
+import { OpenOrClosed } from './OpenOrClosed'
 import './styles.css'
 
 // Create a lazy-loaded split bundle for the canvas
@@ -12,11 +13,11 @@ render(
     <Suspense fallback={null}>
       <Canvas />
     </Suspense>
-    <img alt='POND Coffee logomark' className='logo' src={`/svg/7.svg`} />
+    <Logo />
     <div className='overlay'>
       <div className='info'>
         <div className='top'>
-          <div />
+          <OpenOrClosed />
           <Clock />
         </div>
         <div className='bottom'>
@@ -26,7 +27,7 @@ render(
           </h2>
           <h2>
             our spot: <br />
-            <a href='https://goo.gl/maps/e9HxC5bFLx7sbAps9'>Small Mart</a>
+            <a href='https://goo.gl/maps/e9HxC5bFLx7sbAps9'>small mart</a>
           </h2>
         </div>
       </div>

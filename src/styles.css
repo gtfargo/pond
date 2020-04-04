@@ -43,6 +43,10 @@ body {
 
 a {
   color: #333;
+  transition: 200ms all;
+}
+a:hover {
+  color: #f00000;
 }
 .overlay {
   position: absolute;
@@ -117,5 +121,9 @@ canvas {
   z-index: 1;
   position: relative;
   pointer-events: none;
-  /* top: -100px; */
+}
+
+.coffee-guy {
+  width: 75px;
+  height: 75px;
 }

@@ -1,6 +1,6 @@
 import React, { Suspense, useRef } from 'react'
 import { Canvas, Dom } from 'react-three-fiber'
-import Model, { Model2 } from './Model'
+import { Model2 } from './Model'
 
 function getMousePos(e) {
   return { x: e.clientX, y: e.clientY }

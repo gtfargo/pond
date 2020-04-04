@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import lightFormat from 'date-fns/lightFormat'
 
 export const Clock = (props) => {

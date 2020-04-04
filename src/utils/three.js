@@ -1,4 +1,4 @@
-import { REVISION } from 'three/src/constants.js'
+// import { REVISION } from 'three/src/constants.js'
 
 //export { WebGLMultisampleRenderTarget } from 'three/src/renderers/WebGLMultisampleRenderTarget.js'
 //export { WebGLCubeRenderTarget } from 'three/src/renderers/WebGLCubeRenderTarget.js'
@@ -60,7 +60,9 @@ export class TextureLoader {
 //export { ObjectLoader } from 'three/src/loaders/ObjectLoader.js'
 //export { MaterialLoader } from 'three/src/loaders/MaterialLoader.js'
 //export { BufferGeometryLoader } from 'three/src/loaders/BufferGeometryLoader.js'
-export { /*DefaultLoadingManager,*/ LoadingManager } from 'three/src/loaders/LoadingManager.js'
+export {
+  /*DefaultLoadingManager,*/ LoadingManager,
+} from 'three/src/loaders/LoadingManager.js'
 //export { ImageLoader } from 'three/src/loaders/ImageLoader.js'
 //export { ImageBitmapLoader } from 'three/src/loaders/ImageBitmapLoader.js'
 //export { FontLoader } from 'three/src/loaders/FontLoader.js'

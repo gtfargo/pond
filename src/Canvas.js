@@ -18,13 +18,7 @@ export default function App() {
       <fog attach='fog' args={['white', 0, 20]} />
       {/* <ambientLight intensity={3} /> */}
       <pointLight position={[0, 50, 20]} intensity={2} />
-      <Suspense
-        fallback={
-          <Dom center className='loader'>
-            LOADING
-          </Dom>
-        }
-      >
+      <Suspense fallback={<Dom center className='loader'></Dom>}>
         {/* <Model position={[0, -6, 0]} rotation={[0, -0.2, 0]} /> */}
         <Model2 position={[0, 0, 0]} rotation={[0, 0, 0]} />
       </Suspense>

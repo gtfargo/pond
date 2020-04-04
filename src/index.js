@@ -9,11 +9,6 @@ const Canvas = lazy(() => import('./Canvas'))
 
 render(
   <>
-    {/* <div class='header'>
-      <a href='https://goo.gl/maps/e9HxC5bFLx7sbAps9'>
-        <h1 class='doink'>2700 Chartres St. New Orleans LA 70117</h1>
-      </a>
-    </div> */}
     <Suspense fallback={null}>
       <Canvas />
     </Suspense>
@@ -28,6 +23,10 @@ render(
           <h2>
             wanna chat? <br />
             hit us up <a href='https://instagram.com/pondcoffee'>@pondcoffee</a>
+          </h2>
+          <h2>
+            our spot: <br />
+            <a href='https://goo.gl/maps/e9HxC5bFLx7sbAps9'>Small Mart</a>
           </h2>
         </div>
       </div>

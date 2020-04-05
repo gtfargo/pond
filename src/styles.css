@@ -100,7 +100,7 @@ a:hover {
 
 .logo {
   max-width: 800px;
-  min-width: 400px;
+  /* min-width: 400px; */
   height: 100%;
   position: absolute;
   left: 0;
@@ -126,4 +126,10 @@ canvas {
 .coffee-guy {
   width: 75px;
   height: 75px;
+}
+@media only screen and (max-width: 470px) {
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
 }

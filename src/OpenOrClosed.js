@@ -7,6 +7,7 @@ import {
   isSaturday,
   isSunday,
   setHours,
+  isWednesday,
 } from 'date-fns'
 
 export const OpenOrClosed = (props) => {
@@ -27,7 +28,12 @@ export const OpenOrClosed = (props) => {
   // check days
   let open = false
   open =
-    isThursday(date) || isFriday(date) || isSaturday(date) || isSunday(date)
+    isWednesday(date) ||
+    isThursday(date) ||
+    isFriday(date) ||
+    isSaturday(date) ||
+    isSunday(date)
+
   // check hours
   open =
     isBefore(date, setHours(new Date(), 13)) &&

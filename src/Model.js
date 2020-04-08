@@ -6,7 +6,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 export function Model2(props) {
   const group = useRef()
   const mesh = useRef()
-  const { nodes } = useLoader(GLTFLoader, '/Mug.glb', (loader) => {
+  const { nodes } = useLoader(GLTFLoader, '/mug.glb', (loader) => {
     const dracoLoader = new DRACOLoader()
     dracoLoader.setDecoderPath('/draco-gltf/')
     loader.setDRACOLoader(dracoLoader)

@@ -26,8 +26,10 @@ export const OpenOrClosed = (props) => {
   }
 
   // check days
-  let open = false
-  open =
+  let day = false
+  let hours = false
+
+  day =
     isWednesday(date) ||
     isThursday(date) ||
     isFriday(date) ||
@@ -35,13 +37,13 @@ export const OpenOrClosed = (props) => {
     isSunday(date)
 
   // check hours
-  open =
+  hours =
     isBefore(date, setHours(new Date(), 13)) &&
     isAfter(date, setHours(new Date(), 8))
 
   return (
     <h2>
-      {open ? "we're open!" : 'sorry, we are closed right now'}
+      {day && hours ? "we're open!" : 'sorry, we are closed right now'}
       <br /> wednesday - sunday <br />
       8am - 1pm
     </h2>

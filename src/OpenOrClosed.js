@@ -2,12 +2,12 @@ import React from 'react'
 import {
   isBefore,
   isAfter,
-  isThursday,
-  isFriday,
-  isSaturday,
-  isSunday,
+  // isThursday,
+  // isFriday,
+  // isSaturday,
+  // isSunday,
   setHours,
-  isWednesday,
+  // isWednesday,
 } from 'date-fns'
 
 export const OpenOrClosed = (props) => {
@@ -26,15 +26,15 @@ export const OpenOrClosed = (props) => {
   }
 
   // check days
-  let day = false
+  let day = true
   let hours = false
 
-  day =
-    isWednesday(date) ||
-    isThursday(date) ||
-    isFriday(date) ||
-    isSaturday(date) ||
-    isSunday(date)
+  // day =
+  //   isWednesday(date) ||
+  //   isThursday(date) ||
+  //   isFriday(date) ||
+  //   isSaturday(date) ||
+  //   isSunday(date)
 
   // check hours
   hours =
@@ -44,7 +44,7 @@ export const OpenOrClosed = (props) => {
   return (
     <h2>
       {day && hours ? "we're open!" : 'sorry, we are closed right now'}
-      <br /> wednesday - sunday <br />
+      <br /> everyday <br />
       8am - 1pm
     </h2>
   )

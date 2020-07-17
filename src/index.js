@@ -18,7 +18,13 @@ render(
       <div className='info'>
         <div className='top'>
           <OpenOrClosed />
-          <Clock />
+          <>
+            <h2>
+              <Clock />
+              <br />
+              <a href='https://pond-coffee.square.site/'>store</a>
+            </h2>
+          </>
         </div>
         <div className='bottom'>
           <h2>

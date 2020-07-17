@@ -83,7 +83,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
-.info > .bottom > h2:last-child {
+.info > .bottom > h2:last-child,
+.info > .top > h2:last-child {
   text-align: right;
 }
 
@@ -136,6 +137,10 @@ canvas {
   .info > .top > h2 {
     text-align: center;
   }
+  .info > .top > h2:last-child {
+    text-align: center;
+  }
+
   h2 {
     font-size: 1.2rem;
     line-height: 1.5rem;

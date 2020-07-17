@@ -18,6 +18,8 @@ export function Model2(props) {
     const sine = Math.sin(state.clock.getElapsedTime())
     // Rotate
     group.current.rotation.y += delta / 2
+    group.current.rotation.x += sine / 250
+    // group.current.rotation.z += sine / 150
     // Lift up and down gently
     group.current.position.y = (0.3 + sine) * 0.4
     // The Shadows component returns its own api as a ref (a fn that sets the blur factor)

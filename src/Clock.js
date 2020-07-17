@@ -17,10 +17,10 @@ export const Clock = (props) => {
   }
 
   return (
-    <h2>
+    <>
       {lightFormat(date, 'h')}
       <span className='blinker'>:</span>
       {lightFormat(date, 'mm')} pm
-    </h2>
+    </>
   )
 }

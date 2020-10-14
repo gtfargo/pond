@@ -1,19 +1,103 @@
-.navigation {
+.container {
+  background-color: rgb(250, 245, 235);
+}
+
+.header {
+  position: absolute;
   width: 100%;
-  height: 100px;
-  background-color: blue;
+  height: 150px;
+  color: white;
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-bottom: 5px white solid;
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+}
+
+.navigation h1 {
+  font-size: 2em;
+}
+.navList {
+  display: flex;
+  flex-direction: row;
+}
+
+.navLink a {
+  color: white;
+  font-size: 2em;
+  padding: 3rem;
+  transition: color 200ms ease-in;
+}
+.navLink a:last-of-type {
+  padding-right: 0;
+}
+.navLink a:hover,
+.navLink a:active,
+.navLink a:focus {
+  color: red;
 }
 
 .main {
   min-height: 100vh;
-  background-color: yellow;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
-  background-color: red;
+  /* height: 100px; */
+  /* position: fixed; */
+  bottom: 0;
+}
+.footerContents {
+  border-top: 5px black solid;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.footer h2 {
+  font-size: calc(3em + (72 - 14) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: 1em;
+}
+.footer p,
+.footer ol {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.grid {
+  padding-top: 1em;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  /* z-index: -1; */
+}
+
+.center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.caption {
+  font-size: calc(1em + (40 - 1) * ((100vw - 300px) / (1600 - 300)));
+  /* height: 100px; */
+  background-color: white;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }

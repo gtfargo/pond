@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "@tailwindcss/ui": "^0.6.2",
+    "axios": "^0.20.0",
     "classnames": "^2.2.6",
+    "locomotive-scroll": "^3.6.1",
     "next": "9.5.5",
+    "randomcolor": "^0.6.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },

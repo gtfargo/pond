@@ -101,3 +101,32 @@
   border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
+
+.ticker {
+  /* border-top: 5px solid black; */
+  /* height: 100px; */
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker h4 {
+  font-size: 2em;
+  white-space: nowrap;
+  --move-initial: calc(0%);
+  --move-final: calc(-100%);
+  --offset: 20vw;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 10s linear infinite;
+  animation-play-state: running;
+  line-height: 4em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}

@@ -26,7 +26,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min) //The maximum is exclusive and the minimum is inclusive
 }
 
-export default function Home({ images }) {
+export default function Home({ images, user }) {
   const [grid, setGrid] = useState(false)
   const [caption, setCaption] = useState(null)
 
@@ -144,12 +144,22 @@ export default function Home({ images }) {
               </div>
             </div>
           </main>
+          {/* <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full'> */}
+          <div className={styles.ticker}>
+            <h4>
+              {user.biography} {user.biography}
+            </h4>
+          </div>
+          {/* </div> */}
           <footer className={styles.footer}>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full'>
               <div className={styles.footerContents}>
                 <h2>get in touch</h2>
                 <p>
-                  <a href='#'>Email: info@pondcoffee.com</a>
+                  <a href='#'>
+                    Email: <br />
+                    info@pondcoffee.com
+                  </a>
                 </p>
                 <a href='#'>
                   <ol>

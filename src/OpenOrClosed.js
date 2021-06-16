@@ -45,7 +45,7 @@ export const OpenOrClosed = (props) => {
     <h2>
       {day && hours ? "we're open!" : 'sorry, we are closed right now'}
       <br /> open everyday <br />
-      8am - 1pm
+      8am - 2pm
     </h2>
   )
 }
